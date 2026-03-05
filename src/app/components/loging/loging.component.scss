@@ -34,11 +34,11 @@
     
     h2 {
       font-size: 1.5rem;
-      color: #00f2ff;
+      color: #00f84a;
       text-align: center;
       letter-spacing: 3px;
       margin-bottom: 10px;
-      text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+      text-shadow: 0 0 10px rgba(0, 248, 74, 0.5);
     }
 
    
@@ -54,7 +54,7 @@
 
       &:focus-within {
         background: rgba(0, 242, 255, 0.15);
-        border-color: #00f2ff;
+        border-color: #00f84a;
         box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
       }
 
@@ -75,7 +75,7 @@
     .btn-submit {
       margin-top: 10px;
       padding: 14px;
-      background: #00f2ff;
+      background: #00f84a;
       color: #000;
       border: none;
       border-radius: 8px;
