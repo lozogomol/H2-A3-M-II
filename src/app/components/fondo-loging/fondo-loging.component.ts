@@ -11,11 +11,9 @@ import * as THREE from 'three';
 export class FondoLogingComponent implements AfterViewInit {
   @ViewChild('rendererContainer') rendererContainer!: ElementRef;
 
-  // Inyectamos el ID de plataforma para saber si estamos en el navegador
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngAfterViewInit() {
-    // Solo ejecutamos Three.js si detectamos que estamos en el cliente (navegador)
     if (isPlatformBrowser(this.platformId)) {
       this.initThree();
     }
@@ -29,7 +27,7 @@ export class FondoLogingComponent implements AfterViewInit {
     renderer.setSize(window.innerWidth, window.innerHeight);
     this.rendererContainer.nativeElement.appendChild(renderer.domElement);
 
-    // Esfera para el fondo 360
+  
     const geometry = new THREE.SphereGeometry(500, 60, 40);
     geometry.scale(-1, 1, 1);
 
