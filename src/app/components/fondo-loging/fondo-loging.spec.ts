@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FondoLoging } from './fondo-loging';
+import { FondoLogingComponent } from './fondo-loging';
 
 describe('FondoLoging', () => {
-  let component: FondoLoging;
-  let fixture: ComponentFixture<FondoLoging>;
+  let component: FondoLogingComponent;
+  let fixture: ComponentFixture<FondoLogingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FondoLoging],
+      imports: [FondoLogingComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(FondoLoging);
+    fixture = TestBed.createComponent(FondoLogingComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

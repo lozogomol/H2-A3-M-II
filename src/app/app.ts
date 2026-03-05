@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FondoLogingComponent } from './components/fondo-loging/fondo-loging.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, FondoLogingComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
