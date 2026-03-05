@@ -1,21 +1,27 @@
-<div class="login-3d-box">
-  <div #cubeCanvas class="canvas-container"></div>
+<div class="login-3d-box floating-container">
+  <div #cubeCanvas class="canvas-wrapper"></div>
 
-  <div class="form-overlay">
-    <h2>H2A3 LOGIN</h2>
+  <form class="login-form" (submit)="onLogin($event)">
+    <h2>INICIAR SESIÓN</h2>
     
-    <div class="input-group">
-      <input type="text" placeholder="Usuario" name="username">
+    <div class="input-container">
+      <span class="icon"></span>
+      <label for="user" class="sr-only">Usuario</label>
+      <input type="text" id="user" name="username" placeholder="Usuario" required autocomplete="username">
     </div>
 
-    <div class="input-group">
-      <input type="password" placeholder="Contraseña" name="password">
+    <div class="input-container">
+      <span class="icon"></span>
+      <label for="pass" class="sr-only">Contraseña</label>
+      <input type="password" id="pass" name="password" placeholder="Contraseña" required autocomplete="current-password">
     </div>
 
-    <button type="submit" class="login-button">ENTRAR</button>
+    <button type="submit" class="btn-submit">
+      <span>ENTRAR</span>
+    </button>
     
-    <div class="actions">
-      <a href="#">Recuperar cuenta</a>
+    <div class="form-footer">
+      <a href="#" class="link-secondary">¿Olvidaste tus datos?</a>
     </div>
-  </div>
+  </form>
 </div>
