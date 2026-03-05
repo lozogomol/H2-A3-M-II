@@ -1,0 +1,27 @@
+<div class="login-3d-box floating-container">
+  <div #cubeCanvas class="canvas-wrapper"></div>
+
+  <form class="login-form" (submit)="onLogin($event)">
+    <h2>INICIAR SESIÓN</h2>
+    
+    <div class="input-container">
+      <span class="icon"></span>
+      <label for="user" class="sr-only">Usuario</label>
+      <input type="text" id="user" name="username" placeholder="Usuario" required autocomplete="username">
+    </div>
+
+    <div class="input-container">
+      <span class="icon"></span>
+      <label for="pass" class="sr-only">Contraseña</label>
+      <input type="password" id="pass" name="password" placeholder="Contraseña" required autocomplete="current-password">
+    </div>
+
+    <button type="submit" class="btn-submit">
+      <span>ENTRAR</span>
+    </button>
+    
+    <div class="form-footer">
+      <a href="#" class="link-secondary">¿Olvidaste tus datos?</a>
+    </div>
+  </form>
+</div>
