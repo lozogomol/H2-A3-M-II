@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { FondoLogingComponent } from './fondo-loging';
+import { FondoLogingComponent } from './fondo-loging.component';
 
 describe('FondoLoging', () => {
   let component: FondoLogingComponent;
